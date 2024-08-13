@@ -1,0 +1,120 @@
+1. Project Setup
+
+Initialize Project:
+
+Set up a React.js project.
+
+Install necessary dependencies: react-router-dom, axios, styled-components, json-server, bcryptjs for encryption, and any other necessary libraries.
+
+Set Up JSON Server:
+Create a db.json file to store users and recipes.
+Configure the JSON server to serve data from db.json.
+
+2. Routing
+
+Set Up Routing:
+Use react-router-dom to create routes for the Login, Registration, Home, and Profile Pages.
+Implement protected routes to restrict access to certain pages based on user authentication status.
+
+3. User Management
+
+Registration Page:
+Form:
+Collect user details: Name, Surname, Email, Username, Password, Profile Picture.
+Password Encryption:
+Encrypt the password before sending it to the server.
+
+API Call:
+POST /users: Add new user data to JSON server.
+
+Login Page:
+
+Form:
+Collect Username and Password.
+
+Password Decryption:
+Compare encrypted password with the stored one.
+
+API Call:
+GET /users: Verify user credentials.
+
+Authentication:
+If valid, set user session and redirect to the Home Page.
+
+Profile Page:
+
+View Profile:
+Display user information.
+Allow users to update their profile information.
+
+Update Profile:
+PATCH /users/:id: Update user details on the server.
+Update login credentials if necessary.
+
+4. Recipe Management
+Home Page:
+Display Recipes:
+Fetch and display all recipes from the JSON server.
+Implement search functionality for filtering recipes by name or category.
+Group recipes by categories (Breakfast, Lunch, Dinner, etc.).
+
+Add Recipe:
+
+Form:
+Input fields for Recipe Name, Ingredients, Instructions, Category, Preparation Time, Cooking Time, Servings.
+
+API Call:
+POST /recipes: Add new recipe to JSON server.
+
+Update Recipe:
+Edit Function:
+Allow users to edit existing recipe details.
+
+API Call:
+PATCH /recipes/:id or PUT /recipes/:id: Update recipe on the JSON server.
+
+Delete Recipe:
+API Call:
+DELETE /recipes/:id: Remove a recipe from the JSON server.
+
+5. Data Management
+Persistence:
+Ensure all user and recipe data is stored in db.json via the JSON server.
+
+Performance:
+
+Optimization:
+Implement lazy loading, memoization, and other techniques to ensure fast loading and smooth performance.
+
+Privacy & Security:
+
+User Data Protection:
+
+Ensure user passwords are encrypted.
+Use secure HTTP methods and validate user input.
+Protect sensitive routes and data according to best practices.
+
+6. User Interface (UI)
+
+Responsive Design:
+Implement a responsive layout to support various screen sizes.
+
+UI Components:
+Design intuitive components for forms, recipe cards, navigation, etc.
+
+Styled-Components:
+Utilize styled-components to manage CSS.
+
+7. Deployment
+
+Host the App:
+Deploy the React app and JSON server to a platform like Vercel or Netlify.
+
+Ensure Security:
+Secure the backend and ensure data protection compliance.
+
+8. Testing
+Test Components:
+Implement unit tests for key components and functions.
+End-to-End Testing:
+Test the full user flow from registration to recipe management.

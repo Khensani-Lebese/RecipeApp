@@ -1,0 +1,77 @@
+Create new React project
+Install dependencies: react-router-dom, axios, styled-components, json-server, bcryptjs
+Create db.json file with initial data
+Start JSON server
+
+Define routes for Login, Registration, Home, and Profile
+Create protected routes for user-restricted pages
+
+Registration:
+  Display registration form
+  Collect user data (name, surname, email, username, password)
+  Encrypt password
+  Send user data to server
+  Handle successful registration
+
+Login:
+  Display login form
+  Collect username and password
+  Verify credentials against server data
+  If valid, set user session
+  Redirect to home page
+
+Profile:
+  Display user information
+  Allow editing of profile information
+  Implement password change functionality
+  Display user activity (optional)
+
+Home Page:
+  Display featured recipes (optional)
+  Display recipe categories (optional)
+  Implement search bar
+
+Recipe List:
+  Fetch recipes from server
+  Display recipe cards with basic information
+  Implement filtering and sorting options
+
+Recipe Details:
+  Display detailed recipe information
+  Include ingredients, instructions, and other details
+
+Add Recipe:
+  Display recipe creation form
+  Collect recipe data (name, ingredients, instructions, etc.)
+  Send recipe data to server
+  Handle successful creation
+
+Update Recipe:
+  Fetch existing recipe data
+  Display editable form
+  Allow user to modify recipe details
+  Update recipe on server
+
+Delete Recipe:
+  Confirm deletion
+  Send delete request to server
+  Remove recipe from UI
+
+Use JSON server to store users and recipes
+Implement API calls to interact with JSON server
+Encrypt user passwords
+Implement error handling for API calls
+Consider performance optimization techniques
+
+Design responsive layout
+Create reusable components
+Implement styling using styled-components or CSS
+Focus on user experience and accessibility
+Deployment
+
+Deploy React app and JSON server to a hosting platform
+Ensure security measures are in place
+
+Write unit tests for components
+Write integration tests for API interactions
+Conduct user testing
